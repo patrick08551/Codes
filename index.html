@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PERSONAL STUFF ABOUT MYSELF</title>
+    <style>
+        /* Make body fill the viewport */
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: bisque;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: darkslateblue;
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        /* Logo or title styling */
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Image Box Container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            margin-top: 2rem;
+        }
+
+        /* Individual Image Box */
+        .box {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Text Overlay */
+        .text-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.0rem;
+            font-weight: sans-serif;
+        }
+
+        /* Footer */
+        footer {
+            background-color: darkslateblue;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 900px) {
+            body {
+                background: linear-gradient(to bottom, aquamarine, yellow);
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background: linear-gradient(to bottom, pink, rgb(84, 134, 124));
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Personal Website</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#location">Location</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the My Personal Stuff</h1>
+        <p>Enjoy this simple things that somehow I like Mwehehehe!</p>
+
+        <!-- Image Boxes -->
+        <div class="image-container">
+            <div class="box">
+                <img src="aac91ee3-0220-433e-a21f-2861d7194e71.jpg" alt="Image">
+                <div class = "text-overlay">Hi!! I am Patrick Laurence G Lagaya, I am 20 years old and I live in Brgy Cotta.   </div>
+            </div>
+            <div class="box">
+                <img src="de67690c-d156-440e-934b-b70713cd2bc1.jpg" alt="Image">
+                <div class = "text-overlay">My hobbies are watching animes and listening 
+                    to music and sometimes I read books. I also write poems when I have 
+                    free time just because I am bored. </div>
+            </div>
+            <div class="box">
+                <img src="feef0215-c818-495c-89be-35ed9bec7cbb.jpg" alt="Image">
+                <div class = "text-overlay">Feona Kiara Lavares, BS Psychology sa Enverga
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>&copy; 2025 My Personal Website HAHHAHAHAHAHAH</footer>
+</body>
+</html>
